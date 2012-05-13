@@ -1,9 +1,7 @@
-package working;
+package finished;
 
 import java.io.FileReader;
-import java.util.Queue;
 import java.util.Scanner;
-import java.util.Stack;
 
 public class BalancedParenthesis {
 
@@ -27,15 +25,19 @@ public class BalancedParenthesis {
 			String parse = reader.nextLine();
 			int left = 0;
 			int right = 0;
+			boolean valid = true;
 			for (int i = 0; i < parse.length(); i++) {
 				char cheat = parse.charAt(i);
 				if(cheat == '(')
 					left++;
 				else if(cheat == ')')
 					right++;
+				
+				if (right > left)
+					valid = false;
 			}
 			
-			if(true)
+			if(valid)
 				System.out.println(parse + " IS WELL-FORMED");
 			else 
 				System.out.println(parse + " IS NOT WELL-FORMED");
