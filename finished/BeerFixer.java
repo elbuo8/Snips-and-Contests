@@ -26,7 +26,8 @@ public class BeerFixer {
 		for (int i = 0; i < list.size(); i++) {
 			writer.write(list.get(i) + "\n");
 		}
-		
+		writer.flush();
+		writer.close();
 
 
 
