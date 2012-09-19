@@ -1,4 +1,4 @@
-package working;
+package finished;
 
 import java.util.Arrays;
 
@@ -15,7 +15,7 @@ public class mongoInterview {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		int[] sortedArray = {-5,-2,1,0,2,4};
+		int[] sortedArray = {-5,-3,-1,0,3,10,25};
 		System.out.println(Arrays.toString(squarer(sortedArray)));
 	}
 
