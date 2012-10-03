@@ -1,4 +1,4 @@
-package working;
+package finished;
 
 import java.util.Scanner;
 
@@ -10,7 +10,6 @@ public class FirstNonRepeated {
 	public static void main(String[] args) {
 
 		String parse = new Scanner(System.in).nextLine();
-
 		for (int i = 0; i < parse.length(); i++) {
 			String letter = parse.substring(i, i+1);
 			//System.out.println(parse.substring(0, i) + "," + parse.substring(i, parse.length()));
